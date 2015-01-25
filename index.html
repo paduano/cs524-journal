@@ -89,6 +89,10 @@
                     Computing and visualizing sets of elements and their relationships is one of the most common tasks one performs when analyzing and organizing large amounts of data. Common representations of sets such as convex or concave geometries can become cluttered and difficult to parse when these sets overlap in multiple or complex ways, e.g., when multiple elements belong to multiple sets. In this paper, we present a design study of a novel set visual representation, LineSets, consisting of a curve connecting all of the setʼs elements. Our approach to design the visualization differs from traditional methodology used by the InfoVis community. We first explored the potential of the visualization concept by running a controlled experiment comparing our design sketches to results from the state-of-the-art technique. Our results demonstrated that LineSets are advantageous for certain tasks when compared to concave shapes. We discuss an implementation of LineSets based on simple heuristics and present a study demonstrating that our generated curves do as well as human-drawn ones. Finally, we present two applications of our technique in the context of search tasks on a map and community analysis tasks in social networks.
                 </p>
 
+                <p class="lead">
+                    Checkout my demo: <a href="http://paduano.github.io/pathways/">http://paduano.github.io/pathways/</a>
+                </p>
+
                 <h4>Summary</h4>
                 <p class="summary">
                     The “common” way to visualize which elements belongs to a set is the Euler and Venn diagram.  (If you don’t know the difference between Euler and Venn diagram visit : http://blog.visual.ly/euler-and-venn-diagrams/).
@@ -100,12 +104,18 @@
 
                 <h4>Comments</h4>
                 <p class="comments">
-                    The main concept of LineSet is to use line crossing instead visual overlap to identify set intersection. Eulero and Venn Diagram are intuitive tools but limited. LineSet seems to be a good solution for some visualization. They of course have some drawbacks:
-                    A line suggest an ordering. A viewer might mistakenly think that there is some kind of ordering of the elements of the set
-                    Do not capture the “space”. A line is one dimensional. The popular Eulero diagrams highlight a region of the space where the elements are located. A Lineset is less effective for this kind of visualization, but in some circumstances the position of the elements of the set is arbitrary.
-                    The cardinality of the set can be effectively visualized thanks to the size of the Eulero set. LineSets visualize the cardinality of the set with the length of the line.
+                    The main concept of LineSet is to use line crossing instead visual overlap to identify set intersection. Eulero and Venn Diagram are intuitive tools but limited.
+                    LineSet seems to be a good solution for some visualization. They of course have some drawbacks:
+                    <ul>
+                        <li>A line suggest an ordering. A viewer might mistakenly think that there is some kind of ordering of the elements of the set</li>
+                        <li>Do not capture the “space”. A line is one dimensional. The popular Eulero diagrams highlight a region of the space where the elements are located. A Lineset is less effective for this kind of visualization, but in some circumstances the position of the elements of the set is arbitrary.</li>
+                        <li>The cardinality of the set can be effectively visualized thanks to the size of the Eulero set. LineSets visualize the cardinality of the set with the length of the line.</li>
+                    </ul>
 
                 </p>
+
+
+
                 <hr>
                 <!-- Blog Sidebar Widgets Column -->
                 <div class="col-md-4">
@@ -114,46 +124,7 @@
         </div>
         <!-- /.row -->
 
-        <div class="row">
-            <!-- Blog Post Content Column -->
-            <div class="col-lg-8">
 
-                <!-- Blog Post -->
-
-                <!-- Title -->
-                <h1>Blog Post Title</h1>
-
-                <!-- Author -->
-                <p class="lead">
-                    by <a href="#">CS524 JOURNAL Paduano Francesco</a>
-                </p>
-
-                <hr>
-
-                <!-- Date/Time -->
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
-
-                <hr>
-
-                <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-
-                <hr>
-
-                <!-- Post Content -->
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
-
-                <hr>
-                <!-- Blog Sidebar Widgets Column -->
-                <div class="col-md-4">
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
 
         <hr>
 
