@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog Post - Start Bootstrap Template</title>
+    <title>CS524 Journal</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,22 +39,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">CS524</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+                <!--<ul class="nav navbar-nav">-->
+                    <!--<li>-->
+                        <!--<a href="#">CS524 JOURNAL</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -64,7 +58,63 @@
     <div class="container">
 
         <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
 
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Design Study of LineSets, a Novel Set Visualization Technique </h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#">Basak Alper, Nathalie Henry Riche, Gonzalo Ramos, and Mary Czerwinski</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Inserted on Jan 23</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <img class="img-responsive" src="res/lineset1.jpg" alt="">
+
+                <hr>
+
+                <!-- Post Content -->
+                <h4>Abstract</h4>
+                <p class="abstract">
+                    Computing and visualizing sets of elements and their relationships is one of the most common tasks one performs when analyzing and organizing large amounts of data. Common representations of sets such as convex or concave geometries can become cluttered and difficult to parse when these sets overlap in multiple or complex ways, e.g., when multiple elements belong to multiple sets. In this paper, we present a design study of a novel set visual representation, LineSets, consisting of a curve connecting all of the setʼs elements. Our approach to design the visualization differs from traditional methodology used by the InfoVis community. We first explored the potential of the visualization concept by running a controlled experiment comparing our design sketches to results from the state-of-the-art technique. Our results demonstrated that LineSets are advantageous for certain tasks when compared to concave shapes. We discuss an implementation of LineSets based on simple heuristics and present a study demonstrating that our generated curves do as well as human-drawn ones. Finally, we present two applications of our technique in the context of search tasks on a map and community analysis tasks in social networks.
+                </p>
+
+                <h4>Summary</h4>
+                <p class="summary">
+                    The “common” way to visualize which elements belongs to a set is the Euler and Venn diagram.  (If you don’t know the difference between Euler and Venn diagram visit : http://blog.visual.ly/euler-and-venn-diagrams/).
+                    They have some inherent limitation. If the number of sets and elements it too high complex concave shapes must be used and this lead to poor readability.
+                    LineSet are a way to represent sets which consists in lines which pass through each element of the set.  They works extremely well (wrt the standard visualization techniques) when there are multiple intersection.
+                    LineSet implementation uses LKH travelling salesman heuristic in order to compute the shortest line which goes through all the data points.
+
+                </p>
+
+                <h4>Comments</h4>
+                <p class="comments">
+                    The main concept of LineSet is to use line crossing instead visual overlap to identify set intersection. Eulero and Venn Diagram are intuitive tools but limited. LineSet seems to be a good solution for some visualization. They of course have some drawbacks:
+                    A line suggest an ordering. A viewer might mistakenly think that there is some kind of ordering of the elements of the set
+                    Do not capture the “space”. A line is one dimensional. The popular Eulero diagrams highlight a region of the space where the elements are located. A Lineset is less effective for this kind of visualization, but in some circumstances the position of the elements of the set is arbitrary.
+                    The cardinality of the set can be effectively visualized thanks to the size of the Eulero set. LineSets visualize the cardinality of the set with the length of the line.
+
+                </p>
+                <hr>
+                <!-- Blog Sidebar Widgets Column -->
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
 
@@ -75,7 +125,7 @@
 
                 <!-- Author -->
                 <p class="lead">
-                    by <a href="#">Start Bootstrap</a>
+                    by <a href="#">CS524 JOURNAL Paduano Francesco</a>
                 </p>
 
                 <hr>
@@ -98,122 +148,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
 
                 <hr>
-
-                <!-- Blog Comments -->
-
-                <!-- Comments Form -->
-                <div class="well">
-                    <h4>Leave a Comment:</h4>
-                    <form role="form">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                <!-- Blog Sidebar Widgets Column -->
+                <div class="col-md-4">
                 </div>
-
-                <hr>
-
-                <!-- Posted Comments -->
-
-                <!-- Comment -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Start Bootstrap
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
-                </div>
-
-                <!-- Comment -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Start Bootstrap
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        <!-- Nested Comment -->
-                        <div class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/64x64" alt="">
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">Nested Start Bootstrap
-                                    <small>August 25, 2014 at 9:30 PM</small>
-                                </h4>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                            </div>
-                        </div>
-                        <!-- End Nested Comment -->
-                    </div>
-                </div>
-
             </div>
-
-            <!-- Blog Sidebar Widgets Column -->
-            <div class="col-md-4">
-
-                <!-- Blog Search Well -->
-                <div class="well">
-                    <h4>Blog Search</h4>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
-                                <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
-                    </div>
-                    <!-- /.input-group -->
-                </div>
-
-                <!-- Blog Categories Well -->
-                <div class="well">
-                    <h4>Blog Categories</h4>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </div>
-
-                <!-- Side Widget Well -->
-                <div class="well">
-                    <h4>Side Widget Well</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-                </div>
-
-            </div>
-
         </div>
         <!-- /.row -->
 
