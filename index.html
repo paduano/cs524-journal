@@ -65,6 +65,190 @@
                 <!-- Blog Post -->
 
                 <!-- Title -->
+                <h1>A Nested Model for Visualization Design and Validation
+                </h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#">Tamara Munzner</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Inserted on Feb 1</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <img class="img-responsive" src="res/nestedmodel.jpg" alt="">
+
+                <hr>
+
+                <!-- Post Content -->
+
+                <h4>Abstract</h4>
+                <p class="abstract">
+                    We present a nested model for the visualization design and validation with four layers: characterize the task and data in
+                    the vocabulary of the problem domain, abstract into operations and data types, design visual encoding and interaction techniques,
+                    and create algorithms to execute techniques efficiently. The output from a level above is input to the level below, bringing attention to
+                    the design challenge that an upstream error inevitably cascades to all downstream levels. This model provides prescriptive guidance
+                    for determining appropriate evaluation approaches by identifying threats to validity unique to each level. We also provide three
+                    recommendations motivated by this model: authors should distinguish between these levels when claiming contributions at more than
+                    one of them, authors should explicitly state upstream assumptions at levels above the focus of a paper, and visualization venues
+                    should accept more papers on domain characterization.
+                </p>
+
+
+
+                <h4>Summary</h4>
+                <p class="summary">
+                    This paper proposes a strategy to design and validate visualization solutions effectively.
+                    The proposed model is composed by four steps:
+                    <ul>
+                        <li> characterize the tasks and data in the vocabulary of the problem
+                             domain</li>
+                        <li> abstract into operations and data types </li>
+                        <li> design visual encoding
+                            and interaction techniques </li>
+                        <li> create algorithms to execute these techniques efficiently</li>
+                    </ul>
+
+                The first three steps are more closely related to the data visualization field although the last one is probably the closest one to computer science <br>
+                The authors points out that those steps must be followed in order, since the achievements of the previous steps are the "inputs" of the following step.
+                After a description of what each steps is meant to deal with, the author try to indentify which are the common pitfalls in each step, the so called
+                "threats". Each threats must be overcame and different validation strategies applies. For instance, some step must be validated with results "downstream"
+                (the so called "downstream validation"), others can be validated at the same step (immediate validation) <br>
+                Suggested strategies to effectively adopt this four step model is to adopt iterative loops and rapid prototyping.
+                This strategy requires a strong and frequent interaction with domain experts, and results in a repetition of the four step to have
+                a constant feedback and validation. <br>
+                The report some examples which adopt the described model in different formats. Not in all the cases all four steps are considered. For
+                instance Noack’s LinLog paper does not face the algorithms step, it consider the design of a better algorithm in a future work.
+
+
+                </p>
+
+                <h4>Comments</h4>
+                <p class="summary">
+                    Proposing a model to design a visualization tool is a challenging task. The author capture some recurrent schema and
+                    task in the process of developing a visualization and identifies the common threats and adopted validation methods. <br>
+                    As discussed in "CREATIVITY SUPPORT TOOLS" paper, a way to be "creative" comes from following the rules rigorously.
+                    Even if I might disagree with this interpretation, I recognize that the design of a visualization is not merely "creative". <br>
+                    Indeed, some step of the process (especially 1,2) requires to be backed up with rules that can help to avoid common mistakes.
+                    <br>
+                    I found interesting the discussion about a very common problem in some visualization papers. It seems that often there is a mismatch between
+                    the level at which the contribution is claimed and the validation methodologies chosen. This lead to a partial validation of your
+                    work. As discussed in the paper "Challenges and Unsolved Problems" to find a proper and unbiased validation to the visualization tool is still an open
+                    challenge.
+                    <br>
+                    I would like to spend some words on the "iterative loop" approach. That reminds me the "Agile developing" technique well know to programmers.
+                    This proves how in every field where the design and technical skills are not possessed by the domain experts it is required a
+                    careful and iterative collaboration between developer and expert.
+
+                </p>
+
+
+                <hr>
+                <!-- Blog Sidebar Widgets Column -->
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Process and Pitfalls in Writing Information
+                    Visualization Research Papers
+                </h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#">Tamara Munzner</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Inserted on Feb 1</p>
+
+                <hr>
+
+
+                <!-- Post Content -->
+
+                <h4>Abstract</h4>
+                <p class="summary">
+                    The goal of this paper is to help authors recognize and avoid
+                    a set of pitfalls that recur in many rejected information visualization
+                    papers, using a chronological model of the research process. Selecting a
+                    target paper type in the initial stage can avert an inappropriate choice
+                    of validation methods. Pitfalls involving the design of a visual encoding
+                    may occur during the middle stages of a project. In a later stage when
+                    the bulk of the research is finished and the paper writeup begins, the
+                    possible pitfalls are strategic choices for the content and structure of the
+                    paper as a whole, tactical problems localized to specific sections, and
+                    unconvincing ways to present the results. Final-stage pitfalls of writing
+                    style can be checked after a full paper draft exists, and the last set of
+                    problems pertain to submission
+                </p>
+
+
+                <h4>Comments</h4>
+                <p class="comments">
+                    The author summarizes in the essay a number of common mistakes and pitfall that, according to her experience,
+                    often lead to paper rejection. <br>
+                    Some mistakes are merely grammatical, others are due to bad structure of the paper or unclear targets. <br>
+                    I have found interesting the following advices:
+                    <ul>
+                        <li>
+                            A great coding effort does not necessary mean that your paper should include implementation details
+                            <br> Indeed, a visualization paper should focus on the representation techniques, and include programming
+                            details only if they are particular interesting such as a fast algorithm or a very complex system design.
+                        </li>
+                        <li>
+                            Before start writing a paper it is necessary to have clear in mind which is the <b>type</b> of the paper,
+                            the <b>contributions</b>, and the <b>validation method</b>
+                        </li>
+                        <li>
+                            A 3D visualization must be carefully legitimized. 3D is not just a "2D with an extra dimension" but leads to
+                            a lot of design and visualization issue such as occlusion, hard to measure distances and navigation.
+                        </li>
+                        <li>
+                            To validate your own work effectively is probably one of the most challenging aspect of a visualization research. <br>
+                            Do not use toy example to show the effectiveness of your tool, and every design choice that is not supported from other
+                            papers must be discussed in deep.
+                        </li>
+                    </ul>
+
+                    I personally appreciate the effort of the author to share her experience in the field to sum up the most common mistakes. <br>
+                    Even if some suggestions might sound obvious, the author clearly states that all the mistakes she has reported in the essay
+                    have been witnessed very often. For someone who is new to the field this paper is absolutely something worth to read.
+
+                </p>
+
+
+                <hr>
+                <!-- Blog Sidebar Widgets Column -->
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
                 <h1>Hierarchical Edge Bundles: Visualization of Adjacency Relations in Hierarchical Data
                 </h1>
 
@@ -223,7 +407,9 @@
                 <h4>Comments</h4>
                 <p class="comments">
                 </p>
-
+                    Scalability: data grow up more than computational speed
+                    scalability and level of abstacrion
+                    what does it mean intuitive
 
 
                 <hr>
@@ -308,7 +494,10 @@
 
                 <h4>Comments</h4>
                 <p class="comments">
-
+                    Collaborations?
+                    What he many by history keeping
+                    How to evaluate a new idea
+                    software learning curve
 
 
                 </p>
